@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo7.png">
+    <title>Twitter</title>
+</head>
+<body>
+    <section id="navbar">
+        <img class="logo" src="Images/logo7.png">
+        <div class = "centerofleftnav">
+            <div class="navblock"><a href=""><i class="fa-solid fa-house-user"></i><span class="lefttext"> Home </span></a></div>
+            <div class="navblock"><a href=""><i class="fa-solid fa-tag"></i><span class="lefttext"> Explore</span></a></div>
+            <div class="navblock"><a href=""><i class="fa-solid fa-circle-exclamation"></i><span class="lefttext"> Notification</span></a></div>
+            <div class="navblock"><a href=""><i class="fa-solid fa-envelope-open-text"></i><span class="lefttext"> Messages</span></a></div>
+            <div class="navblock"><a href=""><i class="fa-solid fa-address-card"></i><span class="lefttext"> Profile</span></a></div>
+            <div class="navblock"><a href=""><i class="fa-solid fa-circle-plus"></i></i><span class="lefttext"> More</span></a></div>
+            <div class="navblock"><a href=""><i class="fa-solid fa-list"></i><span class="lefttext"> List</span></i></a></div>
+            <div class="navblock"><a href=""><i class="fa-solid fa-book-bookmark"></i></i><span class="lefttext"> Bookmarks</span></a></div>
+            <button id = "texting" class="customizecolorchange"><span class="lefttext ">Tweet</span></button>
+        </div> 
+        <footer class="footernav">
+            <img src="images/man.png" alt="User" class="usernameimg">
+            <div class="usernamediv">
+                <span class="namenav">User name</span>
+                <span class="usernamenav">@username</span>
+            </div>
+        </footer>
+    </section>
+    <section id="main">
+        <header id="mainnav" class="mainnavbackground border">
+            <nav class="mainnav">
+                <ul class="mainnavul">
+                    <li class="mainnavli mainnavleft"><a href="#" class="mainaleft">Home</a></li>
+                    <li class="mainnavli mainnavright"><a href="#" class="customizeicon"><i class="fa-regular fa-star"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="mainmain">
+            <section id="customize" class="border">
+                <h1 class="customizetitle maintitle">Customize your view</h1>
+                <p class="customizeparagraph mainparagraph">Manage your font size, color, and background. These settings affect all the Twitter accounts on this browser.</p>
+                <div class="customizediv">Font size</div>
+                <div class="customizecolor blockfont">
+                    <div class="customizefontleft">Aa</div>
+                    <div class="customizefontcenter"></div>
+                    <div class="customizefontright">Aa</div>
+                </div>
+                <div class="customizediv">Color</div>
+                <div class="customizecolor blockcolor"></div>
+                <div class="customizediv">Background</div>
+                <div class="customizecolor blocktheme">
+                    <button class="customizethemecolordiv customizethemecolordiv0">
+                        <div class="customizecircle customizecircle0"></div>
+                        <div class="customizethemetext customizethemetext0">Default</div>
+                    </button>
+                    <button class="customizethemecolordiv customizethemecolordiv1" >
+                        <div class="customizecircle customizecircle1"></div>
+                        <div class="customizethemetext customizethemetext1">Dim</div>
+                    </button>
+                    <button class="customizethemecolordiv customizethemecolordiv2">
+                        <div class="customizecircle customizecircle2"></div>
+                        <div class="customizethemetext customizethemetext2">Dark</div>
+                    </button>
+                </div>
+                <div class="customizebtndiv">
+                    <button class="customizebtn customizecolorchange">Done</button>
+                </div>
+            </section>
+            <section id="cardsection" class="border">
+                <h1 class="cardstitle maintitle">Interesting accounts</h1>
+                <p class="cardsparagraph mainparagraph">We've collected for you some accounts that you can be interested in.</p>
+                <div id="cards"></div>
+            </section>
+        </main>
+    </section>
+    <section id="right">
+        <input type="text" placeholder="Search Twitter" onkeypress="search()" id="search" class="searchright backgroundchange">
+        <div class="rightmain">
+            <h1 class="rightTitle backgroundchange">Top accounts</h1>
+            <div id="topaccountsmain" class="topaccountsmain backgroundchange">
+                <div id="topaccounts" class="topaccounts"></div>
+            </div>
+            <div class="showtopdiv">
+                <div id="showtopbtn" class="showtopbtn textcolorchange">Show more top accounts</div>
+            </div>
+            <div class="showtopfivediv">
+                <div id="showtopfivebtn" class="showtopbtn textcolorchange">Show only top 5 accounts</div>
+            </div>
+            <h1 class="rightTitle  backgroundchange">Trends for you</h1>
+            <div id="tagsforyou" class="tags backgroundchange"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
